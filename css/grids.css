@@ -1,0 +1,357 @@
+.mySplash{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.navContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.myLogo{
+  order: 1;
+  align-self: flex-start;
+}
+
+.myMenuItems{
+  order: 2;
+  align-self: flex-end;
+}
+
+.footerContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+
+.footerIcons{
+  order: 1;
+  align-self: flex-start;
+}
+
+
+.myFooterItems{
+  order: 2;
+  align-self: flex-end;
+}
+
+.myContent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nextSectionContainer{
+  position: absolute;
+}
+
+.contentItem{
+  flex: 1;
+  align-self: center;
+  width: 40vw;
+}
+
+.nextSection{
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+}
+
+
+/* .nextHomeSection{
+  display: flex;
+  flex-direction: column;
+} */
+
+.myTopSeparator{
+  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.myBottomSeparator{
+  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.myBioContainer{
+  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  flex-direction: row;
+}
+
+.leftItems{
+  display: flex;
+  flex:1;
+  order: 1;
+  flex-direction: column;
+}
+.rightItems{
+  display: flex;
+  flex:1;
+  order: 2;
+  flex-direction: column;
+  background: grey;
+}
+
+.columnItem{
+  width: 40vw;
+}
+
+.myProjectContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  flex-direction: column;
+}
+
+.titleContainer{
+  flex: 1;
+  order: 1;
+  width: 100%;
+  max-height: 25%;
+}
+.projectGrid{
+  flex: 1;
+  order: 1;
+  width: 100%;
+  min-height: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.grid1of3{
+  flex: 1;
+  min-width: 30%;
+}
+.grid2of3{
+  flex: 2;
+  min-width: 30%;
+}
+
+.grid2of5{
+  flex: 2;
+  min-width: 30%;
+  padding: 1em;
+}
+
+.grid3of5{
+  flex: 3;
+  padding: 1em;
+}
+
+.grid5of5{
+  min-width: 100%;
+}
+
+.grid5of5 p{
+  padding-left: 2em;
+}
+.mySectionContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 15em;
+  position: relative;
+  z-index: -1;
+}
+
+/*========================MY MEDIA QUERIES=========================*/
+
+
+@media (max-width: 72em){ /*1150 px*/
+  .contentItem{
+    width: 50vw;
+  }
+}
+
+@media (max-width: 62em){ /*990 px*/
+  .page-footer{
+    text-align: center;
+  }
+}
+
+@media (max-width: 61em){ /*975 px*/
+  .myProjectContainer{
+    height: auto;
+    padding: 2em 0 2em 0;
+  }
+
+  .projectTitleColumn{
+    margin: auto;
+  }
+
+  .projectGrid{
+    display: block;
+  }
+
+  .projectThumbnail{
+    max-width: 75%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .thumbnailCaption{
+    text-align: center;
+  }
+}
+
+@media (max-width: 59em){ /*950px*/
+  .contentItem{
+    width: 70vw;
+    margin: auto;
+  }
+
+  .myMenuItems{
+    min-width: 60%;
+  }
+
+  .myLogo{
+    width:auto;
+  }
+
+  .myBioContainer{
+    display: inline-block;
+  }
+
+  .mySectionTitle{
+    margin-top: 2em;
+  }
+
+  .columnItem{
+    margin-left: 3em;
+  }
+
+  .leftItems{
+    width: 100%;
+    display: block;
+  }
+
+  .bioTextColumn{
+    width: auto;
+  }
+
+  .rightItems{
+    display: 100%;
+    display: block;
+  }
+
+  .mySectionContainer{
+    display: inline-block;
+  }
+  .mainTitle{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .projectCats{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .projectCats2{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .grid2of5{
+    padding: 3em;
+  }
+
+  .grid3of5{
+    padding: 3em;
+  }
+}
+
+@media (max-width: 47em){ /*750px*/
+  .navContainer{
+    width: 85vw;
+  }
+
+  .myMenuItems{
+    min-width: 80%;
+  }
+
+  .myLogo{
+    width:auto;
+  }
+   .columnItem{
+     width: auto;
+   }
+   .myIntro{
+     font-size: 2.5em;
+   }
+}
+
+@media (max-width: 34.5em){ /*550px*/
+  .navContainer{
+    width: 85vw;
+  }
+
+  .myMenuItems{
+    min-width: 80%;
+  }
+
+  .myLogo{
+    width:auto;
+  }
+
+
+  .contentItem{
+    width: 80vw;
+  }
+
+  .footerContainer{
+    display: block;
+    height: 10vh;
+    padding: 0 4em 4em 4em;
+  }
+
+  .footerIcons{
+    width: 100%;
+  }
+
+  .footerIcons a{
+    font-size: 1.5em;
+  }
+  .footerIcons i{
+    margin: 0 1em 0 1em;
+  }
+
+  .myFooterLinks li {
+    float: left;
+    margin-left: 5.5em;
+    margin-bottom: 4em;
+
+  }
+
+  .projectThumbnail{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 31.25em){ /*500px*/
+  .myIntro{
+    font-size: 2em;
+  }
+}
