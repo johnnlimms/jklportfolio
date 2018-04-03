@@ -25,10 +25,10 @@ $(document).ready(function(){
 
 function Start() {
 
-    $('#zichtbaar').on({
+    $('#myPhoto').on({
 
-    mouseenter: function () { $('#DasBild').prop('src', 'img/forward.gif') },
-    mouseleave: function () { $('#DasBild').prop('src', 'img/reverse.gif') }
+    mouseenter: function () { $('#myPhotoGif').prop('src', 'img/forward.gif') },
+    mouseleave: function () { $('#myPhotoGif').prop('src', 'img/reverse.gif') }
 
   });
 }
