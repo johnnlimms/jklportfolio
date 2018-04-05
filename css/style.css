@@ -1,7 +1,7 @@
 /* $primary: #F66464;
-$secondary: #A0CCE3;
+$secondary: #E9E8E4;
 $tertiary: #1B2355;
-$accent: #E8ECEF; */
+$accent: #434751; */
 
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,800');
@@ -15,6 +15,7 @@ body{
   padding: 0;
   font-family: "Nunito", sans-serif;
 }
+
 .mySplash{
   z-index: 10;
   height: 100vh;
@@ -24,13 +25,28 @@ body{
   background-size: cover;
 }
 
+.myExtraContent{
+  margin-top: 13em;
+  padding: 0 4em 0 4em;
+}
 
+.styleguideHeader{
+  color: rgb(100, 100, 100);
+  display: block;
+  border-bottom: 2px solid rgb(100, 100, 100);
+  padding-bottom: 0.5em;
+}
+
+.navBG{
+  background: rgba(255, 255, 255, 0.8);
+}
 .navContainer{
   position: fixed;
   width: 90vw;
   padding: 4em;
   height: 5vh;
   top: 0;
+  z-index: 10;
 }
 .myLogo{
   height: 100%;
@@ -89,22 +105,17 @@ body{
   font-size: 2em;
   color: #F66464;
   margin-right: 1em;
+  transition: all 0.3s ease;
 }
 
-.myFooterItems{
-  height: 100%;
-  /* background: grey; */
-  min-width: 40%;
+.footerIcons i:hover{
+  transform: scale(1.5);
+  transition: all 0.3s ease;
 }
 
-.myFooterLinks li{
+.hireMe{
   display: inline-block;
-  /* width: 30%; */
-  text-align: center;
-  float: right;
-}
-
-.footerLink a{
+  width: 50%;
   text-decoration: none;
   padding: 0.5em 2em;
   border: 2px solid #F66464;
@@ -113,12 +124,23 @@ body{
   color: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
   transition:all 0.3s ease;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
-.footerLink a:hover{
+.hireMe:hover{
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   transition:all 0.3s ease;
+  transform: scale(1.05)
 }
+
+.myFooterItems{
+  height: 100%;
+  /* background: grey; */
+  min-width: 40%;
+}
+
 
 .footerIcons a{
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -251,11 +273,7 @@ body{
 }
 
 .myProjectContainer{
-  /* margin-top: 15vh; */
-  /* height: 70vh; */
-  padding: 6em 0 6em 0;
-  background: #E9E8E4;
-  box-shadow: 0 0px 50px 10px rgba(0, 0, 0, 0.2);
+  padding: 3em 0 6em 0;
   z-index: 2;
 }
 .myFooter{
@@ -282,12 +300,13 @@ body{
 
 .projectThumbnail img{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition:all 0.3s ease;
+  transition:all 0.3s ease;
 }
 
 .projectThumbnail img:hover{
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
   transition:all 0.3s ease;
+  transform: scale(1.01)
 }
 
 .thumbnailCaption{
@@ -449,4 +468,63 @@ body{
 
 .kintecThumbnail{
   max-width: 100%;
+}
+
+.videoThumbnail{
+ max-width: 100%;
+ margin: 0 auto;
+ display: block;
+}
+
+.thumbnailCaption a{
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.thumbnailCaption a:hover{
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  border-bottom: 2px solid #F66464;
+  transition: all 0.3s ease;
+}
+
+
+/*STYLEGUIDE*/
+.grid1of3.primary{
+  flex: 1;
+  background: #F66464;
+  color: white;
+  font-weight: bold;
+  max-width: 10px;
+  text-align: center;
+}
+.grid1of3.secondary{
+    flex: 1;
+  background: #E9E8E4;
+  color: white;
+  font-weight: bold;
+  max-width: 10px;
+  text-align: center;
+}
+.grid1of3.accent{
+    flex: 1;
+  background: #434751;
+  color: white;
+  font-weight: bold;
+  max-width: 10px;
+  text-align: center;
+}
+
+.styleguideIcon i{
+  font-size: 2em;
+  color: #F66464;
+  margin-right: 1em;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.styleguideIcon i:hover{
+  transform: scale(1.5);
+  transition: all 0.3s ease;
 }

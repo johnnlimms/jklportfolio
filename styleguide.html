@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1">
+    <title>My Portfolio Styleguide</title>
+
+
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel = "stylesheet" href = "css/grids.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  </head>
+  <body class = "myStyleguide">
+    <!--THIS WILL BE MY NAVIGATION BAR-->
+    <header>
+      <nav class = "navContainer navBG">
+        <div class = "myLogo">
+          <a class = "logoImg" href = "index.html"><img class = "logoImg" src = "img/myLogo.png"></a>
+        </div>
+        <div class = "myMenuItems">
+          <ul class = "myMenuLinks">
+            <li class = "linkItem"><a href = "index.html">My Portfolio</a></li>
+            <li class = "linkItem"><a href = "styleguide.html">Styleguide</a></li>
+            <li class = "linkItem"><a href = "citations.html">Citations</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class = "myExtraContent">
+      <section class = "styleguideSection">
+        <h2 class = "styleguideHeader">Colors</h2>
+        <div class = "myStyleguideGrid">
+          <div class = "grid1of3 primary">#F66464</div>
+          <div class = "grid1of3 secondary">#E9E8E4</div>
+          <div class = "grid1of3 accent">#434751</div>
+        </div>
+      </section>
+      <section class = "styleguideSection">
+        <h2 class = "styleguideHeader">Typography</h2>
+        <div class = "myStyleguideGrid">
+          <div class = "grid3of5">
+            <h2 class = "myIntro">Intro Header</h2>
+            <h2 class = "myAboutSectionTitle">Section <span class = "underlined">Title</span></h2>
+              <figcaption class = "thumbnailCaption"><span class = "projectTitleCaption">Thumbnail</span> || Caption</figcaption>
+          </div>
+          <div class = "grid3of5">
+            <h1 class = "mainTitle">Project Title</h1>
+            <h2 class = "projectCats">Project Category</h2>
+            <h2 class = "projectCats2">Project Sub-category</h2>
+            <p class = "myBioText">My passion is to innovate design with technology. My goal is to guide users through a journey by designing visually appealing and intuitive interfaces. I capture stories through a lens. I tell stories through motion design. I am a design geek who is eager to expand my skills of integrating art and interactivity. Please hire me.</p>
+          </div>
+        </div>
+      </section>
+      <section class = "styleguideSection">
+        <h2 class = "styleguideHeader">Interactive Elements</h2>
+        <div class = "myStyleguideGrid">
+            <div class = "grid3of5">
+              <a href="kintec.html" class ="projectThumbnail"><img class = "projectThumbnail" src="img/kintec.png" alt = "Kintec Graphics"></a>
+              <figcaption class = "thumbnailCaption"><span class = "projectTitleCaption">Project Thumbnail Link</figcaption>
+            </div>
+            <div class = "grid3of5">
+                <a class ="styleguideIcon" href ="http://instagram.com/johnnlimms" target="_blank"><i class="fa fa-instagram"></a></i>
+                <a class ="styleguideIcon" href ="http://dribbble.com/johnnlimms" target="_blank"><i class="fa fa-dribbble"></a></i>
+              <a class = "hireMe" href = "mailto:jlimiac@sfu.ca?Subject=Job%20Opportunity" target="_top">Hire Me</a>
+              <div class = "myImg">
+                <a id="myPhoto"><img id="myPhotoGif" src="img/reverse.gif"/></a>
+              </div>
+            </div>
+        </div>
+      </section>
+    </div>
+
+      <script src = "js/animation.js"></script>
+  </body>
+</html>

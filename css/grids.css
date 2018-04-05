@@ -4,6 +4,10 @@
   justify-content: space-between;
 }
 
+.myStyleguideGrid{
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .navContainer{
   display: flex;
@@ -184,7 +188,7 @@
   flex-wrap: wrap;
   flex-grow: 15em;
   position: relative;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 /*========================MY MEDIA QUERIES=========================*/
@@ -250,9 +254,9 @@
     margin-top: 2em;
   }
 
-  .columnItem{
+  /* .columnItem{
     margin-left: 3em;
-  }
+  } */
 
   .leftItems{
     width: 100%;
@@ -331,11 +335,36 @@
 
 @media (max-width: 34.5em){ /*550px*/
   .navContainer{
-    width: 85vw;
+    width: 100vw;
+    display: block;
+    padding: 3em 0 0 0;
+    height: auto;
+    background: rgba(255, 255, 255, 0.8);
   }
 
+  .logoImg{
+    width: 40%;
+  }
+
+  .myMenuLinks{
+    padding:0;
+  }
+  .myMenuLinks li{
+        width: 32%;
+  }
+  .linkItem{
+    margin-top: 2em;
+  }
   .myMenuItems{
     min-width: 80%;
+  }
+
+  .grid2of5Home{
+    margin-top: 8em;
+  }
+
+  .titleContainer{
+    margin-top: 6em;
   }
 
   .myLogo{
@@ -349,8 +378,8 @@
 
   .footerContainer{
     display: block;
-    height: 10vh;
-    padding: 0 4em 4em 4em;
+    height: auto;
+    padding: 0 4em 0 4em;
   }
 
   .footerIcons{
@@ -365,8 +394,6 @@
   }
 
   .myFooterLinks li {
-    float: left;
-    margin-left: 5.5em;
     margin-bottom: 4em;
 
   }
@@ -375,8 +402,12 @@
     max-width: 100%;
   }
 
-  .myPhotoGif{
+  #myPhotoGif{
     width:100%;
+  }
+
+  .myFooterItems{
+    padding: 3em 0 3em 0;
   }
 }
 
@@ -384,5 +415,38 @@
 @media (max-width: 31.25em){ /*500px*/
   .myIntro{
     font-size: 2em;
+  }
+
+  .mySplash{
+    min-height: 700px;
+  }
+
+  .myContent{
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 29em){ /*464*/
+  .myIntro{
+    font-size: 1.7em;
+  }
+}
+
+
+@media (max-width: 22.5em){ /*360*/
+  .myContent{
+    margin-top: 50%;
+  }
+}
+@media (max-width: 20em){ /*320*/
+  .myContent{
+    margin-top: 40%;
+  }
+  .mySplash{
+    min-height: 800px;
+  }
+
+  .myIntro{
+    font-size: 1.5em;
   }
 }
